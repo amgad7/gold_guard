@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "492903572119",
+    "project_id": "gold-caurd-app",
+    "storage_bucket": "gold-caurd-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492903572119:android:851889465b35438a35ffd2",
+        "android_client_info": {
+          "package_name": "com.example.gold_caurd_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB94VnVevEi1Zu-fqqHazh6btBRbM5LkfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
