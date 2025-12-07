@@ -4,6 +4,7 @@ import 'package:gold_caurd_app/core/styling/app_colors.dart';
 
 import '../gold_chart_screen/views/gold_chart_screen.dart';
 import '../home/views/home_screen.dart';
+import '../alerts/views/alerts_screen.dart'; // ← إضافة الـ Import
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -18,6 +19,7 @@ class _MainScreenState extends State<MainScreen> {
   final List<Widget> screens = [
     HomeScreen(),
     GoldChartScreen(),
+    AlertsScreen(), // ← إضافة شاشة Alerts
   ];
 
   @override
@@ -69,6 +71,17 @@ class _MainScreenState extends State<MainScreen> {
                 ),
               ),
               label: "Chart",
+            ),
+            BottomNavigationBarItem( // ← إضافة Tab جديد
+              icon: Padding(
+                padding: EdgeInsets.only(bottom: 4.h),
+                child: Icon(
+                  currentIndex == 2
+                      ? Icons.notifications_active
+                      : Icons.notifications_outlined,
+                ),
+              ),
+              label: "Alerts",
             ),
           ],
         ),
